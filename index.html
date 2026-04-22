@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merta | IoT Portfolio</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Space+Mono&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Background Orbs -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container nav-content">
+            <div class="logo">I Gede Sila Merta Dana<span style="color:var(--accent)"></span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-grid">
+            <div class="hero-text">
+                <p style="font-family: 'Space Mono'; color: var(--accent);">// IoT DEVELOPER</p>
+                <h1>Membenda Mati <br> Jadi <span>Pintar.</span></h1>
+                <p>Saya Merta, spesialisasi dalam merancang sistem embedded, integrasi sensor, dan solusi IoT end-to-end. Mengubah ide menjadi hardware yang terhubung.</p>
+                <a href="#projects" class="btn btn-primary">Lihat Karya Saya</a>
+            </div>
+            <div class="hero-image-wrapper">
+                <!-- GANTI DENGAN FOTO MERTA -->
+                <img src="https://www.image2url.com/r2/default/images/1776835282880-1c3d0cc8-b549-4fb2-b8d0-26672497bca0.jpeg" alt="Merta Profile" class="hero-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Tech Stack</h2>
+            <div class="skills-grid">
+                <div class="glass-panel skill-card">
+                    <i class="ph ph-cpu skill-icon"></i>
+                    <h3>Hardware</h3>
+                    <p>ESP32, Arduino, Raspberry Pi, PCB Design</p>
+                </div>
+                <div class="glass-panel skill-card">
+                    <i class="ph ph-wifi-high skill-icon"></i>
+                    <h3>Connectivity</h3>
+                    <p>MQTT, HTTP, LoRa, BLE, WiFi</p>
+                </div>
+                <div class="glass-panel skill-card">
+                    <i class="ph ph-code skill-icon"></i>
+                    <h3>Firmware</h3>
+                    <p>C++, MicroPython, FreeRTOS</p>
+                </div>
+                <div class="glass-panel skill-card">
+                    <i class="ph ph-cloud-arrow-up skill-icon"></i>
+                    <h3>Cloud</h3>
+                    <p>AWS IoT, Firebase, Node-RED</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Works</h2>
+            <div class="project-grid">
+                
+                <!-- Project 1: Smart Home (GAMBAR BARU) -->
+                <div class="glass-panel project-card">
+                    <div class="project-img-container">
+                        <!-- Gambar Ruang Tamu Modern/Smart Lighting -->
+                        <img src="https://media.assettype.com/analyticsinsight/2025-02-01/ded45em2/AI-Powered-Smart-Home-Hubs-in-2025.jpg?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true" alt="Smart Home" class="project-img">
+                    </div>
+                    <div class="project-info">
+                        <div class="project-header"><h3>Smart Home Hub</h3></div>
+                        <p>Dashboard kontrol rumah terpusat menggunakan ESP32 dan protokol MQTT untuk latency rendah.</p>
+                        <div class="project-tags">
+                            <span class="tag">ESP32</span>
+                            <span class="tag">React</span>
+                            <span class="tag">MQTT</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Agro Sensor -->
+                <div class="glass-panel project-card">
+                    <div class="project-img-container">
+                        <img src="https://www.shutterstock.com/image-photo/agriculture-smart-farming-technology-sensor-260nw-2627863349.jpg">
+                    </div>
+                    <div class="project-info">
+                        <div class="project-header"><h3>Agro Sensor Monitor</h3></div>
+                        <p>Sistem pemantauan kelembaban tanah dan suhu udara otomatis untuk pertanian presisi.</p>
+                        <div class="project-tags">
+                            <span class="tag">Arduino</span>
+                            <span class="tag">LoRa</span>
+                            <span class="tag">Solar Power</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: PCB Design -->
+                <div class="glass-panel project-card">
+                    <div class="project-img-container">
+                        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800" alt="PCB Design" class="project-img">
+                    </div>
+                    <div class="project-info">
+                        <div class="project-header"><h3>Custom PCB Controller</h3></div>
+                        <p>Desain dan produksi PCB custom untuk mengontrol motor stepper pada robot lengan.</p>
+                        <div class="project-tags">
+                            <span class="tag">KiCad</span>
+                            <span class="tag">C++</span>
+                            <span class="tag">Manufacturing</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="glass-panel contact-box">
+                <h2>Mari Berkolaborasi</h2>
+                <p>Punya ide proyek IoT atau butuh solusi hardware? Kirimkan pesan, mari kita diskusikan.</p>
+                <a href="mailto:merta020810@email.com" class="btn btn-primary" target="_blank" style="margin-top: 20px;">Kirim Email</a>
+                
+                <div class="social-links">
+                    <a href="https://github.com/merta020810-hue" class="social-btn" target="_blank">
+                        <i class="ph ph-github-logo"></i>
+                        </a>
+
+                    <a href="https://www.instagram.com/merta_project" class="social-btn" target="_blank">                   <i class="ph ph-instagram-logo"></i>
+                    </a>
+
+                    <a href="https://wa.me/6285702773209" class="social-btn" target="_blank">
+                    <i class="ph ph-whatsapp-logo"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer style="text-align: center; padding: 20px; color: var(--text-muted); font-size: 0.9rem;">
+        <p>&copy; 2026 Merta. All rights reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
+
